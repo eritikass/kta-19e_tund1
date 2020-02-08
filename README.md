@@ -38,7 +38,7 @@ git remote add ops https://github.com/eritikass/kta-19e_tund1.git
 # fetch info from ops remote
 git fetch ops
 # reset local to ops remote master branch 
-git reset --hard origin/master
+git reset --hard ops/master
 
 #git force push  to remote (will override)
 git push -f
