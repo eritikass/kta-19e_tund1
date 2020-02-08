@@ -10,14 +10,36 @@ test('sum 1 + 4 equals 5', () => {
     expect(sum(1, 4)).toBe(5);
 });
 
+// test funktsioonile, mis peaks liitma ainult numbreid, aga ei tohi kokku keevitada numbrit ja stringi
 test('sum 1 (number) + "2" (string) is not "12"', () => {
     expect(sum(1, "2")).not.toBe("12");  // vt jesti dokumentatsioonist, milliseid võrdlusi kasutada
 })
 
-test('sum 1 (number) + "2" (string) is not "12"', () => {
-    expect(sum(1, "2")).toBe("3");  // vt jesti dokumentatsioonist, milliseid võrdlusi kasutada
+// test funktsioonile, mis peaks liitma numbri külge stringi
+test('sum 1 (number) + "2" (string) is 3', () => {
+    expect(sum(1, "2")).toBe(3);  // vt jesti dokumentatsioonist, milliseid võrdlusi kasutada
 })
 
+// püüab vea kinni ja annab veateate
+test('sum "a" (string) + "b" (string) will throw Error', () => {
+    const functionWithError = () => {
+        sum("a", "b")
+    };
+    expect(functionWithError).toThrow();
+});
+
+// test funktsioonile, mis läheb if-i sisse (string isNan)
+test('sum 0 (number) + "kala" (string) will throw Error', () => {
+    const err = () => {
+        sum(0, "kala")
+    };
+    expect(err).toThrow();  // matcher - kui tuleb match (ehk error), siis anna sellest viisakalt teada
+    // st test läks läbi, sain (oodatud) errori (nt: expect(err).not.toBe("0kala"))
+});
+
+// tee const er = expect(err) ja kasuta seda nendes lausetes
+    
+    
 const testCases = [
     [1, 2, 3],
     [5, 4, 9],
