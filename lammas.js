@@ -16,3 +16,4 @@ class Lammas {
 // exports.Lammas = Lammas;
 
 module.exports = Lammas;
+// module.export väärtus on see, mis antakse failist välja

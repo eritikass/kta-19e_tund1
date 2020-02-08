@@ -1,4 +1,5 @@
-const sum = require('./sum');
+const sum = require('./sum'); // otsib faili nimega sum 
+// module.export väärtus on see, mis antakse failist välja
 
 test('sum 1 + 2 equals 3', () => {
     const value = sum(1, 2);
@@ -8,6 +9,14 @@ test('sum 1 + 2 equals 3', () => {
 test('sum 1 + 4 equals 5', () => {
     expect(sum(1, 4)).toBe(5);
 });
+
+test('sum 1 (number) + "2" (string) is not "12"', () => {
+    expect(sum(1, "2")).not.toBe("12");  // vt jesti dokumentatsioonist, milliseid võrdlusi kasutada
+})
+
+test('sum 1 (number) + "2" (string) is not "12"', () => {
+    expect(sum(1, "2")).toBe("3");  // vt jesti dokumentatsioonist, milliseid võrdlusi kasutada
+})
 
 const testCases = [
     [1, 2, 3],
