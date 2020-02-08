@@ -42,5 +42,5 @@ git remote add ops https://github.com/eritikass/kta-19e_tund1.git
 git fetch ops
 
 # reset local to ops remote master branch 
-git reset --hard origin/master
+git reset --hard ops/master
 ```
