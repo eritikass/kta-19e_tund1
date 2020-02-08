@@ -9,6 +9,10 @@ test('sum 1 + 4 equals 5', () => {
     expect(sum(1, 4)).toBe(5);
 });
 
+test (' sum 1 (number) + "2" (string) is not "12" ', ()=> {
+    expect(sum(1, 2)).not.toBe("12");
+});
+
 const testCases = [
     [1, 2, 3],
     [5, 4, 9],
