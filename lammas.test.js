@@ -1,8 +1,9 @@
-const Lammas = require('./lammas');
+const Sheep = require('./sheep');
 
+const NAME1 = 'Dolly';
 describe("Lammas class", () => {
-    test('create Lammas with name dolly, check that name is dolly', () => {
-        const l = new Lammas('dolly');
-        expect(l.getName()).toBe('dolly');
+    test(`create Lammas with name ${NAME1}, check that name is ${NAME1}`, () => {
+        const l = new Sheep(NAME1);
+        expect(l.getName()).toBe(NAME1);
     });
 });
