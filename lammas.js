@@ -1,6 +1,5 @@
 class Lammas {
-    name = '';
-    
+
     constructor(name) {
         this.name = name;
     }
