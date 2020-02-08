@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('./sum'); //see otsib faili sum ja ja väljastab module.export (selle nimi võibolla misiganes)
 
 test('sum 1 + 2 equals 3', () => {
     const value = sum(1, 2);
@@ -8,6 +8,16 @@ test('sum 1 + 2 equals 3', () => {
 test('sum 1 + 4 equals 5', () => {
     expect(sum(1, 4)).toBe(5);
 });
+
+test('sum 1 (number) + "2" (string) is not "12"', () => {
+    expect(sum(1, "2")).not.toBe("12");
+});
+
+test('sum 1 (number) + "2" (string) is not "12"', () => {
+    expect(sum(1, "2")).toBe(3);
+});
+
+
 
 const testCases = [
     [1, 2, 3],

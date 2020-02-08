@@ -1,4 +1,4 @@
 function sum(a, b) {
-    return a + b;
+    return Number (a) + Number (b);
 }
-module.exports = sum;
+module.exports = sum; //see tähendab, et expordime selle siit välja
