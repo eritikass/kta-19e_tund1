@@ -8,7 +8,11 @@ class Sheep {
         return this.name;
     }
     setName(name) {
+        if (this.name === name) {
+            return false;
+        }
         this.name = name;
+        return true;
     }
 }
 
