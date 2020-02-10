@@ -3,8 +3,6 @@ const Lammas = require('./lammas');
 
 const a = 8;
 let b = 1;
-var c = 2;
-
 function sum(param1, param2 = 5) {
     if (Number.isNaN(Number(param1))) {
         throw new Error(param1 + " is not a number");

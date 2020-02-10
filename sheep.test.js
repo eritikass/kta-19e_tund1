@@ -1,5 +1,5 @@
 const Sheep = require('./sheep');
-/*global describe, test, expect */
+/* eslint-env jest  */
 describe('Sheep class', () => {
     describe('.getName', () => {
         test(`create Sheep with name Dolly, check that name is Dolly`, () => {
