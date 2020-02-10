@@ -4,6 +4,7 @@
   "description": "* https://nodejs.org/en/download/\r  * https://git-scm.com/downloads\r  * https://code.visualstudio.com/",
   "main": "example.js",
   "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
     "test": "jest --verbose"
   },
   "repository": {
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/eritikass/kta-19e#readme",
   "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
     "jest": "^25.1.0"
   }
 }
