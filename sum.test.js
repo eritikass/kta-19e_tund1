@@ -1,5 +1,5 @@
 const sum = require('./sum');
-
+/*global describe, test, expect */
 describe("sum.js", () => {
     describe("normal flow", () => {
         test('sum 1 + 2 equals 3', () => {
