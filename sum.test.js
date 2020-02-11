@@ -1,5 +1,5 @@
-const sum = require('./sum');
 /* eslint-env jest  */
+const sum = require('./sum');
 describe("sum.js", () => {
     describe("normal flow", () => {
         test('sum 1 + 2 equals 3', () => {
