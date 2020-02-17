@@ -1,14 +1,15 @@
 const sum = require('./sum');
+/*global describe, test, expect */
 
-sum.describe("sum.js", () => {
-    sum.describe("normal flow", () => {
-        sum.test('sum 1 + 2 equals 3', () => {
+describe("sum.js", () => {
+    describe("normal flow", () => {
+        test('sum 1 + 2 equals 3', () => {
             const value = sum(1, 2);
-            sum.expect(value).toBe(3);
+            expect(value).toBe(3);
         });
         
-        sum.test('sum 1 + 4 equals 5', () => {
-            sum.expect(sum(1, 4)).toBe(5);
+        test('sum 1 + 4 equals 5', () => {
+            expect(sum(1, 4)).toBe(5);
         });
 
         const testCases = [
@@ -23,32 +24,32 @@ sum.describe("sum.js", () => {
         ];
         
         // https://jestjs.io/docs/en/api#testeachtablename-fn-timeout
-        sum.test.each(testCases)('sum(%d, %d) => %d', (a, b, expected) => {
-            sum.expect(sum(a, b)).toBe(expected);
+        test.each(testCases)('sum(%d, %d) => %d', (a, b, expected) => {
+            expect(sum(a, b)).toBe(expected);
         });
     });
 
-    sum.describe('casting', () => {
-        sum.test('sum 1 (number) + "2" (string) is not "12"', () => {
-            sum.expect(sum(1, "2")).not.toBe("12");
+    describe('casting', () => {
+        test('sum 1 (number) + "2" (string) is not "12"', () => {
+            expect(sum(1, "2")).not.toBe("12");
         });
-        sum.test('sum 1 (number) + "2" (string) is 3', () => {
-            sum.expect(sum(1, "2")).toBe(3);
+        test('sum 1 (number) + "2" (string) is 3', () => {
+            expect(sum(1, "2")).toBe(3);
         });
     });
 
-    sum.describe('errors', () => {
-        sum.test('sum "a" (string) + "b" (string) will throw Error', () => {
+    describe('errors', () => {
+        test('sum "a" (string) + "b" (string) will throw Error', () => {
             const functionWithError = () => {
                 sum("a", "b")
             };
-            sum.expect(functionWithError).toThrow();
+            expect(functionWithError).toThrow();
         });
-        sum.test('sum 0 (number) + "kala" (string) is Error', () => {
+        test('sum 0 (number) + "kala" (string) is Error', () => {
             const err = () => {
                 sum(0, "kala")
             };
-            const is = sum.expect(err)
+            const is = expect(err)
             is.toThrow();
             is.not.toBe("0kala");
         });
