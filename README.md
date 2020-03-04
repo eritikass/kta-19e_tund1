@@ -43,4 +43,18 @@ git fetch ops
 
 # reset local to ops remote master branch 
 git reset --hard ops/master
+
+# git force push to remote (will override remote)
+git push -f
 ```
+
+# ESLint
+
+ * https://eslint.org/
+
+init using (with `cmd` in windows)
+```
+node node_modules\eslint\bin\eslint.js --init
+```
+
+ * select airbnb rules ( https://github.com/airbnb/javascript )

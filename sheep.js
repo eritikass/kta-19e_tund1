@@ -1,18 +1,22 @@
-class Lammas {
+class Sheep {
+  constructor(name) {
+    this.name = name;
+  }
 
-    constructor(name) {
-        this.name = name;
-    }
+  getName() {
+    return this.name;
+  }
 
-    getName() {
-        return this.name;
+  setName(name) {
+    if (this.name === name) {
+      return false;
     }
-    setName(name) {
-        this.name = name;
-    }
+    this.name = name;
+    return true;
+  }
 }
 
 // exports.foo = 'boo';
 // exports.Lammas = Lammas;
 
-module.exports = Lammas;
+module.exports = Sheep;
