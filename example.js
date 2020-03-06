@@ -3,7 +3,7 @@ const Lammas = require('./lammas');
 
 const a = 8;
 let b = 1;
-const c = 2;
+
 
 function sum(param1, param2 = 5) {
   if (Number.isNaN(Number(param1))) {
