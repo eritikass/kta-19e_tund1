@@ -4,7 +4,9 @@
   "description": "* https://nodejs.org/en/download/\r  * https://git-scm.com/downloads\r  * https://code.visualstudio.com/",
   "main": "example.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,17 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
     "jest": "^25.1.0"
+  },
+  
+    "husky": {
+      "hooks": {
+        "pre-commit": "npm run lint",
+        "pre-push": "npm test",
+        "...": "..."
+      }
+    }
   }
-}
+  
+
