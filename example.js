@@ -51,13 +51,11 @@ console.log('param1', param1);
 console.log('func2', func2);
 
 
-const l = new Lammas('shawn');
+const l = new Sheep('shawn');
 console.log('lammas name = ', l.getName());
 l.setName('dolly');
 console.log('lammas name = ', l.getName());
 console.log('lammas', l);
-
-
 
 const arr = [1, 3, [1, 2], 'test', new Date(), sum];
 arr.push('ADDED');
