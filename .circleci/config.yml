@@ -1,7 +1,7 @@
-#https://circleci.com/docs/2.0/configuration-reference
+# https://circleci.com/docs/2.0/configuration-reference/
 version: 2.1
 jobs:
-  test:
+  build:
     docker:
       - image: circleci/node:12
     steps:
