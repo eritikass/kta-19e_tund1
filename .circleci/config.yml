@@ -10,5 +10,8 @@ jobs:
           name: "Install node packages"
           command: npm install
       - run:
+          name: "Run linting"
+          command: npm run lint
+      - run:
           name: "Run testing"
           command: npm run test
