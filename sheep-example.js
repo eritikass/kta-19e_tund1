@@ -11,4 +11,4 @@ console.log('name=shawn', l.getName() === 'shawn');
 
 test('create sheep with name dolly, check that name is dolly', () => {
 
-})
+});
