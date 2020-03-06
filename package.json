@@ -5,6 +5,8 @@
   "main": "example.js",
   "scripts": {
     "pretest": "eslint --ignore-path .gitignore .",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
     "test": "jest --verbose"
   },
   "repository": {

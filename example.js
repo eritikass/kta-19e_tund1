@@ -63,10 +63,6 @@ const arr = [1, 3, [1, 2], 'test', new Date(), sum];
 arr.push('ADDED');
 console.log('arr', arr);
 
-arr.forEach((k, index) => {
-  console.log('k', k, index);
-});
-
 arr.forEach((value, index) => {
   console.log('---', value, index);
 });
