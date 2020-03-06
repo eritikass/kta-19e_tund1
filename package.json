@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eritikass/kta-19e.git"
+    "url": "git+https://github.com/dragonwarp/kta-19e_tund1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eritikass/kta-19e/issues"
+    "url": "https://github.com/dragonwarp/kta-19e_tund1/issues"
   },
-  "homepage": "https://github.com/eritikass/kta-19e#readme",
+  "homepage": "https://github.com/dragonwarp/kta-19e_tund1#readme",
   "devDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^25.1.0"
