@@ -1,4 +1,7 @@
-const Sheep = require('./sheep');
+
+
+// eslint-disable-next-line import/no-unresolved
+const Sheep = require('./lammas');
 // console.log('require-lammas', require('./lammas'))
 
 const a = 8;
@@ -18,6 +21,7 @@ console.log('sum2(1,10)=', sum2(1, 10));
 console.log('sum2(1)=', sum2(1)); // default vaartuse kasutus
 
 b = 3363;
+
 
 console.log({ a, b });
 if (a > b) {
@@ -71,7 +75,7 @@ arr.forEach((value, index) => {
   console.log('---', value, index);
 });
 
-// string + number
+ // string + number
 try {
   console.log('sum("aaa", 5) = ', sum('aaa', 5));
 } catch (e) {
