@@ -1,4 +1,4 @@
-const Lammas = require('./lammas');
+const Lammas = require('./sheep');
 
 const l = new Lammas('dolly');
 
@@ -11,4 +11,4 @@ console.log('name=shawn', l.getName() === 'shawn');
 
 test('create lammas with name dolly, check that name is dolly', () => {
 
-})
+});
