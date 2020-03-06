@@ -3,6 +3,7 @@ const Sheep = require('./sheep');
 
 const NAME1 = 'Dolly';
 const NAME2 = 'Sally';
+const NAME3 = 'Molly';
 
 describe('Sheep class', () => {
   test(`create Sheep with name ${NAME1}, check that name is ${NAME1}`, () => {
