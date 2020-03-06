@@ -33,8 +33,8 @@ git remote -v
 
 # add new remote
 # name=ops
-# location=https://github.com/eritikass/kta-19e_tund1.git
-git remote add ops https://github.com/eritikass/kta-19e_tund1.git
+# location=https://github.com/dragonwarp/kta-19e_tund1.git
+git remote add ops https://github.com/dragonwarp/kta-19e_tund1.git
 
 ## each time you want to reset
 

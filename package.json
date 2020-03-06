@@ -4,20 +4,33 @@
   "description": "* https://nodejs.org/en/download/\r  * https://git-scm.com/downloads\r  * https://code.visualstudio.com/",
   "main": "example.js",
   "scripts": {
+    "pretest": "eslint --ignore-path .gitignore .",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
     "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eritikass/kta-19e.git"
+    "url": "git+https://github.com/dragonwarp/kta-19e_tund1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eritikass/kta-19e/issues"
+    "url": "https://github.com/dragonwarp/kta-19e_tund1/issues"
   },
-  "homepage": "https://github.com/eritikass/kta-19e#readme",
+  "homepage": "https://github.com/dragonwarp/kta-19e_tund1#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
     "jest": "^25.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   }
 }
