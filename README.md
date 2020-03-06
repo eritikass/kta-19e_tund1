@@ -1,6 +1,6 @@
 # kta-19e_tund1
 
-tund1 stuff!
+tund12 stuff!
 
 ## tools required
  
