@@ -1,4 +1,4 @@
-const Lammas = require('./lammas');
+const Lammas = require('./sheep');
 // console.log('require-lammas', require('./lammas'))
 
 const a = 8;
@@ -63,9 +63,7 @@ console.log('lammas', l);
 const arr = [1, 3, [1, 2], 'test', new Date(), sum];
 arr.push('ADDED');
 console.log('arr', arr);
-/* for (const k in arr) {
-  console.log('k', k, arr[k]);
-} */
+
 
 arr.forEach((value, index) => {
   console.log('k', index, value);
