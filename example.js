@@ -27,7 +27,7 @@ if (a > b) {
   console.log('b on suurem voi vordne kui c');
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i += 1) {
   console.log('aaa', i);
 }
 
