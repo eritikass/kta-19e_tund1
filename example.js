@@ -63,7 +63,7 @@ console.log('lammas', l);
 const arr = [1, 3, [1, 2], 'test', new Date(), sum];
 arr.push('ADDED');
 console.log('arr', arr);
-for ( const k in arr) {
+for (const k in arr) {
   console.log('k', k, arr[k]);
 }
 
