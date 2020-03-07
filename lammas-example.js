@@ -1,4 +1,4 @@
-const Lammas = require('./lammas');
+const Lammas = require('./sheep');
 
 const l = new Lammas('dolly');
 
