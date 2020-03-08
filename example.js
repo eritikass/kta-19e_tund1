@@ -3,7 +3,6 @@ const Lammas = require('./lammas');
 
 const a = 8;
 let b = 1;
-var c = 2;
 
 function sum(param1, param2 = 5) {
     if (Number.isNaN(Number(param1))) {
@@ -67,7 +66,7 @@ console.log("lammas", l);
 const arr = [1, 3, [ 1 , 2 ],'test', new Date(), sum];
 arr.push('ADDED');
 console.log('arr', arr);
-for (k in arr) {
+for (let k in arr) {
     console.log('k', k, arr[k]);
 }
 
