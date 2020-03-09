@@ -58,3 +58,9 @@ node node_modules\eslint\bin\eslint.js --init
 ```
 
  * select airbnb rules ( https://github.com/airbnb/javascript )
+ 
+## Husky
+ 
+Add Husky to enable testing/linting for git push/commit.
+ 
+ * https://www.npmjs.com/package/husky
