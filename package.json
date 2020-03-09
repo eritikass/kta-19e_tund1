@@ -12,7 +12,8 @@
   "scripts": {
     "test": "jest --verbose",
     "lint": "eslint ./",
-    "fix" : "eslint --fix ./"
+    "fix" : "eslint --fix ./",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
