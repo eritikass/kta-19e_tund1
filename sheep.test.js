@@ -1,4 +1,4 @@
-const Sheep = require('./sheep');
+const Sheep = require('./sheep.js');
 
 describe('Sheep class', () => {
   describe('.getName', () => {

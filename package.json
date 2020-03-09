@@ -11,7 +11,8 @@
   "main": "example.js",
   "scripts": {
     "test": "jest --verbose",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "fix" : "eslint --fix ./"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,14 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
     "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "husky": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
   }
 }

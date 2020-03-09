@@ -1,4 +1,4 @@
-const Sheep = require('./sheep');
+const Sheep = require('./sheep.js');
 
 const l = new Sheep('dolly');
 

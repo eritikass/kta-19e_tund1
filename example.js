@@ -1,4 +1,4 @@
-import Sheep from './sheep';
+const Sheep = require('./sheep.js');
 // console.log('require-lammas', require('./lammas'))
 
 const a = 8;

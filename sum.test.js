@@ -1,4 +1,4 @@
-const sum = require('./sum');
+const sum = require('./sum.js');
 
 describe('sum.js', () => {
   describe('normal flow', () => {
