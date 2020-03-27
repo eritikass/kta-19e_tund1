@@ -1,4 +1,4 @@
-const Sheep = require('./sheep');
+const Sheep = require('./sheep.js');
 
 const l = new Sheep('dolly');
 
@@ -11,4 +11,4 @@ console.log('name=shawn', l.getName() === 'shawn');
 
 test('create sheep with name dolly, check that name is dolly', () => {
 
-})
+});

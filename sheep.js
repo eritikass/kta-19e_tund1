@@ -1,19 +1,19 @@
 class Sheep {
+  constructor(name) {
+    this.name = name;
+  }
 
-    constructor(name) {
-        this.name = name;
-    }
+  getName() {
+    return this.name;
+  }
 
-    getName() {
-        return this.name;
+  setName(name) {
+    if (this.name === name) {
+      return false;
     }
-    setName(name) {
-        if (this.name === name) {
-            return false;
-        }
-        this.name = name;
-        return true;
-    }
+    this.name = name;
+    return true;
+  }
 }
 
 // exports.foo = 'boo';
