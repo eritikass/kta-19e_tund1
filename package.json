@@ -11,7 +11,7 @@
   "main": "example.js",
   "scripts": {
     "test": "jest --verbose",
-    "fix" : "eslint --fix ./",
+    "fix": "eslint --fix ./",
     "lint": "eslint ./"
   },
   "repository": {
