@@ -4,6 +4,6 @@ function randonthindgmidagi(a = 0, b = 'kala') {
   if (Number.isNaN(a1) || Number.isNaN(b1)) {
     throw new Error('Invalid arguments');
   }
-  return a1 + b1;
+  return a1 + c1;
 }
 module.exports = randonthindgmidagi;
